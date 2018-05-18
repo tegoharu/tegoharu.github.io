@@ -2,7 +2,7 @@
 <?php
 $message = "名前：".$_POST["name"]."\n本文：".$_POST["message"];
 
-if(!mb_send_mail("onepiece@sakura-ic.com",$_POST["subject"],$message, "From:".$_POST["mail"])){
+if(!mb_send_mail("onepiece@sakura-ic.com",$message)){
 	exit("error");
 }
 ?>
