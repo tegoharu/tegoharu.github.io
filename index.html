@@ -5,36 +5,98 @@
 	<title>Design Sample</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<!-- <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" /> -->
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
 </head>
 <body>
-
-<a name="top"></a>
 	<!-- ***** container ***** -->
 	<div id="container">
-		<h1 class="mb-0"><img src="img/sample3.png" width="100%"></h1>
-		<!-- ***** corner ***** -->
-		<section class="mb-30 corner">
-			<!-- practice -->
-			<h3 class="mb-15">Practice!!</h3>
-
-			<ul class="list-default mb-30">
-				<li><a href="#">タブの切り替え</a></li>
-				<li><a href="#">本がめくれる・探偵が歩く</a></li>
-				<li><a href="#">画像が浮かび上がる</a></li>
-				<li><a href="#">タロットシャッフル</a></li>
-				<li><a href="#">タップしてカードをめくる</a></li>
-				<li><a href="#">SVGアニメーション</a></li>
+		<section class="header">
+			<p class="sub_title">sample site</p>
+			<h2 class="site_title">Hello World</h2>
+			<ul class="btn clearfix">
+				<li><a href="#">Learn more</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
-			<!-- // practice -->
-			<!-- design check -->
-			<h3 class="mb-15">Design Check!!</h3>
-
-			<!-- // design check -->
 		</section>
-		<!-- ***** // corner ***** -->
 
-	<p class="return"><a href="#top">▲page top</a></p>
+		<section class="about">
+			<h2 class="coner_title">ABOUT ME</h2>
+			<div class="img"><img class="w100" src="images/icon.jpg" alt="" /></div>
+			<p class="name">NAME</p>
+			<p>さんぷるテキストさんぷるテキストさんぷるテキストさんぷるテキスト</p>
+		</section>
+
+		<section class="work">
+			<h2 class="coner_title">WORKS</h2>
+			<div class="box_work">
+				<div class="description">
+					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
+					<p>さんぷるテキストさんぷるテキスト</p>
+					<a class="btn" href="#">read more</a>
+				</div>
+				<div class="description">
+					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
+					<p>さんぷるテキストさんぷるテキスト</p>
+					<a class="btn" href="#">read more</a>
+				</div>
+				<div class="description">
+					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
+					<p>さんぷるテキストさんぷるテキスト</p>
+					<a class="btn" href="#">read more</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="skill">
+			<h2 class="coner_title">MY SKILLS</h2>
+			<div class="box_skill">
+				<div class="box">
+					<div>html5</div>
+					<div class="img"><img src="images/icon_1.png" alt="" /></div>
+					<div>★★★★☆</div>
+				</div>
+				<div class="box">
+					<div>css3</div>
+					<div class="img"><img src="images/icon_2.png" alt="" /></div>
+					<div>★★★★☆</div>
+				</div>
+				<div class="box">
+					<div>javascript/jQuery</div>
+					<div class="img"><img src="images/icon_3.png" alt="" /></div>
+					<div>★★★★☆</div>
+				</div>
+			</div>
+			<div class="box_skill">
+				<div class="box">
+					<div>photshop</div>
+					<div class="img"><img src="images/icon_5.png" alt="" /></div>
+					<div>★★★★☆</div>
+				</div>
+				<div class="box">
+					<div>illustrator</div>
+					<div class="img"><img src="images/icon_4.png" alt="" /></div>
+					<div>★★★★☆</div>
+				</div>
+			</div>
+			<div class="description">
+				コーディングのみのお仕事が中心だったので得意としているのはコーディングです。コード書くの楽しい。<br />フロントエンドエンジニアになるためphpもデザインも色々お勉強中。的な説明
+			</div>
+		</section>
+
+		<section class="contact">
+			<h2 class="coner_title">CONTACT</h2>
+			<form class="contact_form" action="send.php" method="post">
+				<input type="text" name="name" placeholder="NAME">
+				<textarea name="message" placeholder="MESSAGE"></textarea>
+				<input type="submit" value="SEND">
+			</form>
+		</section>
 	</div>
 	<!-- ***** // container ***** -->
+
+	<footer class="footer">
+		(c)sample site 2018
+	</footer>
 </body>
 </html>

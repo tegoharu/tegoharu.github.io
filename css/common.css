@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*COMMON*/
+/** {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body.name * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}*/
+
+@font-face {
+    font-family: mplus-1p-thin;
+    src:url(../font/mplus-1p-thin.ttf) format("truetype");
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	/*outline:0;*/
+}
+body {
+	line-height:1;
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+/* remember to define focus styles! */
+a:focus {
+/*outline: 1px dotted #fff;*/
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration:none;
+}
+del {
+	text-decoration:line-through;
+}
+
+/* tables still need 'cellspacing=&quot;0&quot;' in the markup */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	color: #000;
+}
+
+img{ border:0px; }
+
+br{ letter-spacing:0em; }
+
+a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited { text-decoration: underline; }
+
+a:hover {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	/*visibility: hidden;*/
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+header img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+#main img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+img.w100 { width: 100%; }
+#main img.wh100 {
+	width: 100%;
+	height: 100%;
+}
+.txtHide {
+	text-indent: -9999px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.txtHide, x:-moz-any-link{ text-indent: -9999px; }
+
+.textimg { vertical-align: bottom; }
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/*=====================
+basic style
+=====================*/
+.no_premium {color: #77d3ff;}
+.premium {color: #FFFF00;}
+.red { color: #ff0000; }
+.red_pack { color: #f00; font-weight: bold;}
+.red2 { color: #f00; }
+.blue { color: #0022d0; }
+.cyan { color: #0ff; }
+.magenta { color: #f0f; }
+.green { color: #009329; }
+.yellow { color: #ffe400; }
+.white { color: #fff; }
+.pink { color: #ff0066; }
+.purple { color: #9c038c; }
+.orange { color: #ff7800; }
+.brown { color: #971a1a; }
+
+.bold,
+.premium { font-weight:bold; }
+.fzP1 { font-size: 1.1em;}
+.fzP2 { font-size: 1.3em;}
+
+
+/*=====================
+common parts
+=====================*/
+.footerImgWrap {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	vertical-align: bottom;
+}
+
+.mb_10 {
+	margin-bottom: 10px;
+}
+
+.mb_20 {
+	margin-bottom: 20px;
+}
+
+/*=====================
+main structure
+=====================*/
+html{
+	-webkit-text-size-adjust: 100%;
+
+}
+head { font-size: 0; }
+body{
+	background: #151515 url(../images/back.jpg) no-repeat fixed left bottom;
+	background-size: cover;
+	font-family: "Poiret One" , "mplus-1p-thin" , sans-serif;
+	line-height:1.5;
+	line-break:strict;
+	color: #ffffff;
+	text-align: center;
+}
+body.name {
+	min-width: 0;
+}
+body.nobg { background-image: none; }
+
+/*=====================
+共通
+=====================*/
+.coner_title {
+	font-size: 2.5em;
+}
+p {
+	margin-bottom: 10px;
+}
+
+/*=====================
+container
+=====================*/
+.header {
+	padding: 170px 30px 80px;
+}
+.header .sub_title {
+	font-size: 1.5em;
+}
+.header .site_title {
+	font-size: 3em;
+}
+.header .btn {
+	box-sizing: border-box;
+	display: block;
+}
+.header .btn li {
+	display: inline-block;
+	margin: 10px;
+}
+.header .btn a {
+	width: 200px;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.4);
+	border: 1px solid #ffffff;
+}
+
+/************************ about **********************/
+.about {
+	padding: 80px 30px;
+	color: #333333;
+	background-color: #ffffff;
+}
+.about .img {
+	width: 200px;
+	margin: 0 auto;
+}
+.about .name {
+	color: #f00;
+}
+
+/************************ work **********************/
+.work {
+	padding: 80px 0;
+	background-color: #383634;
+}
+.work .box_work {
+	box-sizing: border-box;
+	display: block;
+}
+.work .description {
+	display: inline-block;
+	width: 200px;
+	margin: 10px;
+	padding-bottom: 15px;
+	border: 2px solid #ccc;
+}
+.work .description .img {
+	width: 120px;
+	margin: 20px auto 5px;
+}
+.work .description p {
+	margin: 0 10px;
+}
+.work .description .btn {
+	display: block;
+	width: 180px;
+	padding: 5px 0;
+	margin: 10px auto 0;
+	color: #383634;
+	text-decoration: none;
+	background-color: #ccc;
+}
+
+/************************ skill **********************/
+.skill {
+	padding: 80px 20px;
+	color: #333333;
+	background-color: #ffffff;
+}
+.skill .box_skill {
+	box-sizing: border-box;
+	display: block;
+}
+.skill .box {
+	display: inline-block;
+	width: 150px;
+	margin-bottom: 20px;
+}
+.skill .box .img img {
+	width: 100px;
+}
+.skill .description {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #eeeeee;
+}
+
+/************************ contact **********************/
+.contact {
+	padding: 80px 0 150px;
+}
+.contact_form {
+	width: 50%;
+	margin: 50px auto 0;
+}
+@media (max-width: 768px) {
+	.contact_form {
+		width: 80%;
+	}
+}
+.contact_form input[type=text],
+.contact_form textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 15px;
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+}
+.contact_form textarea {
+	height: 150px;
+}
+.contact_form input[type=submit] {
+	display: block;
+	width: 200px;
+	margin: 40px auto 0;
+	padding: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	cursor: pointer;
+}
+textarea {
+	overflow: auto;
+}
+
+
+/*===================
+footer
+=====================*/
+.contFoot {
+	display: none;
+}
+
+a.l1{
+	color:#ffa072;
+	text-decoration:underline;
+	font-weight:bold;
+}
+a:visited.l1{
+	color:#ffa072;
+	text-decoration:underline;
+}
+a:hover.l1{
+	color:#ffa072;
+	text-decoration:underline;
+	font-weight:bold;
+}
