@@ -5,14 +5,27 @@
 	<title>Design Sample</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/iziModal.css">
 	<!-- <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" /> -->
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+	<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+	<script src="js/iziModal.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(".iziModal").iziModal({
+			padding: 30,
+			title: ' ',
+			headerColor: '#fff',
+			group: "group1"
+		});
+	})
+	</script>
 </head>
 <body>
 	<!-- ***** container ***** -->
 	<div id="container">
 		<section class="header">
-			<p class="sub_title">sample site</p>
+			<p class="sub_title">haruka sone portfolio site</p>
 			<h2 class="site_title">Hello World</h2>
 			<ul class="btn clearfix">
 				<li><a href="#">Learn more</a></li>
@@ -24,26 +37,62 @@
 			<h2 class="coner_title">ABOUT ME</h2>
 			<div class="img"><img class="w100" src="images/icon.jpg" alt="" /></div>
 			<p class="name">NAME</p>
-			<p>さんぷるテキストさんぷるテキストさんぷるテキストさんぷるテキスト</p>
+			<p>趣味は、夢の国にいる推したちに会いにいくこと。<br />それと駅や街中にある広告を見るのも好きです。<br />自分は制作側ですが、ユーザーの立場になってストレスなく使えるサービス、サイトづくりを心がけています。</p>
 		</section>
 
 		<section class="work">
 			<h2 class="coner_title">WORKS</h2>
 			<div class="box_work">
 				<div class="description">
-					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
-					<p>さんぷるテキストさんぷるテキスト</p>
-					<a class="btn" href="#">read more</a>
+					<div class="img"><img class="w100" src="images/cap_1.png" alt="" /></div>
+					<p>心臓ドッ！衝撃結末に当り泣き◆阪香季</p>
+					<button class="btn" data-iziModal-open=".iziModal">read more</button>
+					<div class="iziModal" data-izimodal-title=" ">
+						<div class="title">心臓ドッ！衝撃結末に当り泣き◆阪香季</div>
+						<div>
+							<div class="img"><img class="w100" src="images/pict_1.png" alt="" /></div>
+							<div class="txt">
+								占いコンテンツ：月額会員制のモバイルサイト<br />(スマートフォン、フューチャーフォン対応)<br /><br />担当：コーディング<br />使用ツール：Dreamweaver, Photoshop<br />使用言語：html5, css3, jquery/javascript<br /><br />2018年3月リリース
+							</div>
+							<div class="btn">
+								<a href="https://baccha2.ura9.com/sp/" target="_brank">url</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="description">
-					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
-					<p>さんぷるテキストさんぷるテキスト</p>
-					<a class="btn" href="#">read more</a>
+					<div class="img"><img class="w100" src="images/cap_2.png" alt="" /></div>
+					<p>TV騒然◆カメラが捉えた的中霊視【嘘と……</p>
+					<button class="btn" data-iziModal-open=".type_2">read more</button>
+					<div class="iziModal type_2" data-izimodal-title=" ">
+						<div class="title">TV騒然◆カメラが捉えた的中霊視【嘘と真実暴く】神懸り能力者・月湖</div>
+						<div>
+							<div class="img"><img class="w100" src="images/pict_2.png" alt="" /></div>
+							<div class="txt">
+								占いコンテンツ：PCデジタルコンテンツ<br />(PC、スマートフォン対応)<br /><br />担当：コーディング<br />使用ツール：Dreamweaver, Photoshop<br />使用言語：html5, css3, jquery/javascript<br /><br />2017年11月リリース
+							</div>
+							<div class="btn">
+								<a href="http://pc-tsukiko.uranai-gogo.com/rak/" target="_brank">url</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="description">
-					<div class="img"><img class="w100" src="images/sample.png" alt="" /></div>
-					<p>さんぷるテキストさんぷるテキスト</p>
-					<a class="btn" href="#">read more</a>
+					<div class="img"><img class="w100" src="images/cap_3.png" alt="" /></div>
+					<p>カミングアウト！<br />記事の挿絵（画像）</p>
+					<button class="btn" data-iziModal-open=".type_3">read more</button>
+					<div class="iziModal type_3" data-izimodal-title=" ">
+						<div class="title">カミングアウト！　記事の挿絵（画像）</div>
+						<div>
+							<div class="img"><img class="w100" src="images/pict_3.png" alt="" /></div>
+							<div class="txt">
+								記事に使用されている挿絵画像を何点か担当<br />(赤枠部分を参照)<br /><br />担当：デザイン<br />使用ツール：Photoshop, Illustrator<br />
+							</div>
+							<div class="btn">
+								<a href="https://comingout.tokyo/990" target="_brank">url</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -54,12 +103,12 @@
 				<div class="box">
 					<div>html5</div>
 					<div class="img"><img src="images/icon_1.png" alt="" /></div>
-					<div>★★★★☆</div>
+					<div>★★★★★</div>
 				</div>
 				<div class="box">
 					<div>css3</div>
 					<div class="img"><img src="images/icon_2.png" alt="" /></div>
-					<div>★★★★☆</div>
+					<div>★★★★★</div>
 				</div>
 				<div class="box">
 					<div>javascript/jQuery</div>
@@ -76,27 +125,24 @@
 				<div class="box">
 					<div>illustrator</div>
 					<div class="img"><img src="images/icon_4.png" alt="" /></div>
-					<div>★★★★☆</div>
+					<div>★★☆☆☆</div>
 				</div>
 			</div>
 			<div class="description">
-				コーディングのみのお仕事が中心だったので得意としているのはコーディングです。コード書くの楽しい。<br />フロントエンドエンジニアになるためphpもデザインも色々お勉強中。的な説明
+				得意としているのはコーディングです。コード書くの楽しい。<br />フロントエンドエンジニアになるためphpもデザインも色々お勉強中。
 			</div>
 		</section>
 
 		<section class="contact">
 			<h2 class="coner_title">CONTACT</h2>
-			<form class="contact_form" action="send.php" method="post">
-				<input type="text" name="name" placeholder="NAME">
-				<textarea name="message" placeholder="MESSAGE"></textarea>
-				<input type="submit" name="action" value="SEND">
-			</form>
+			<a href="mailto:hrk.contact2@gmail.com" target="_blank"><img src="images/mail.png"></a><br />
+			<p>※メーラーが立ち上がらない場合はこちら<br /><span>hrk.contact2★gmail.com</span><br />★　→　@</p>
 		</section>
 	</div>
 	<!-- ***** // container ***** -->
 
 	<footer class="footer">
-		(c)sample site 2018
+		(c)portfolio site hello world 2018
 	</footer>
 </body>
 </html>
